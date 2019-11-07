@@ -5,7 +5,7 @@ int main()
     float amount= 1,cent;
     int function_1(float x, float y);  //取小于方案数的最大分子数
     cent = 0.5;
-    function_1(five_cent, cent, amount)
+    function_1(five_cent, cent, amo)
 
 
 
