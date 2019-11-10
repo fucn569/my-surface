@@ -18,17 +18,24 @@ int main()
     float num_1;
     printf("\nPlease input the decimal:");
     scanf("%f",&num_1);
-    while(i<25)   //!1有问题，不能停止输出例如0.25
+    while(i<40)   //!1问题，不能停止输出例如0.25
     {
         num_1 = num_1 * 2;
-        if (num_1>1)
-        {
-            printf("1");
-            num_1 = num_1 - 1;
-        }
+        if(num_1==0.0)
+            {
+                printf("0");
+            }
         else
         {
-            printf("0");
+            if (num_1>=1)
+            {
+                printf("1");
+                num_1 = num_1 - 1;
+            }
+            else
+            {
+                printf("0");
+            }
         }
         i++;
     }
