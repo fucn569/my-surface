@@ -11,11 +11,11 @@ int main()
     for (i = 0; i < 10;i++)
         printf("%c",password[i]);
     puts(c);//输出字符串时输出的是元素组名
-    strcpy(a, password);   //后者向前者复制
+    strcpy(a, password);   //!后者向前者复制
     printf("%s\n", strcat(password, c));
     puts(a);
     system("pause");
     return 0;
 }
-//strcmp 比较ASC码 比较的值由函数值带回
+
 //strncpy 可以取前几个字符复制

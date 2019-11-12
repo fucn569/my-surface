@@ -11,7 +11,7 @@ int main()
     {
         if(c==' ')
             word = 0;
-        else if(word==0)  //?
+        else if(word==0)  //? 防止多空格对单词数量的影响
         {
             word = 1;
             num++;
