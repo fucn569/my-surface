@@ -22,12 +22,6 @@ int main()
         for (j = 0; j < m;j++)
         {
             scanf("%d", &B[i][j]);
-        }
-    }
-    for (i = 0; i < n;i++)
-    {
-        for (j = 0; j < m;j++)
-        {
             C[i][j] = A[i][j] + B[i][j];
         }
     }

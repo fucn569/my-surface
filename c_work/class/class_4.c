@@ -3,11 +3,11 @@
 int main()
 {
     int num=0, word=0,i;
-    char sestence[100];
+    char sentence[100];
     char c;
-    printf("Please input the sestence:");
-    gets(sestence);
-    for (i; (c = sestence[i])!='\0';i++)
+    printf("Please input the sentence:");
+    gets(sentence);
+    for (i; (c = sentence[i])!='\0';i++)
     {
         if(c==' ')
             word = 0;
@@ -17,6 +17,6 @@ int main()
             num++;
         }
     }
-    printf("There are %d words in this sestence.\n", num);
+    printf("There are %d words in this sentence.\n", num);
     return 0;
 }
