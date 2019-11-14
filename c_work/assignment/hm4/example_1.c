@@ -56,7 +56,10 @@ int main()
                 break;
         }
         if(string[j][n]=='\0'&&string[j][m]=='\0')
+        {
             num--;
+            break;
+        }
     }
     printf("There are %d words in this sentence.\n", num);
     system("pause");
