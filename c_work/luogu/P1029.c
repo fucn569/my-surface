@@ -12,7 +12,7 @@ int main()
     int p1, q1;
     int num=0,i;
     int r = 1;
-    for (q = 2; q <= b;q++)
+    for (q = sqrt(a*b); q <= b;q++)
     {
         for (p = 2; p <= sqrt(a*b); p++)
         {
