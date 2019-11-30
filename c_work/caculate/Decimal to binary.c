@@ -7,7 +7,7 @@ int main()
     while(num!=0)       //todo 添加一个递增变量、改变循环条件可以实现补位
     {
         rem = num % 2;
-        printf("%d",rem);     //?怎么实现颠倒   详见Dtb（2）
+        printf("%d",rem);     //?怎么实现颠倒   详见Dtb（2）(改变方法)    1.存入数组 2.strlen 3.指针
         if(rem==0)
             num = num / 2;
         else
