@@ -21,7 +21,13 @@ int main()
     char operator1, operator2,operator;
 
     printf("Please input the number1=?,number2=?,operator=?,deno1=?,deno2=?\n");
-    scanf("%d%c%d%c%d%c%d", &frac1.num, &operator1, &frac1.deno, &operator, &frac2.num, &operator2, &frac2.deno);
+    while(1)
+    {
+        scanf("%d%c%d%c%d%c%d", &frac1.num, &operator1, &frac1.deno, &operator, &frac2.num, &operator2, &frac2.deno);
+        if(frac1.deno!=0&&frac2.deno!=0)//排除0的影响
+            break;
+        printf("Error!Please input again:\n");
+    }
 
     switch(operator)
     {
@@ -40,7 +46,7 @@ int main()
         default:
             printf("error!");
     }
-    if(operator=='+'||operator=='-'||operator=='*'||operator=='/')  //接上个变量
+    if(operator=='+'||operator=='-'||operator=='*'||operator=='/')  //防止重复输出
         printf("The result is %d/%d",frac.num,frac.deno);
     system("pause");
     return 0;
