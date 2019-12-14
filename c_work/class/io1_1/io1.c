@@ -1,3 +1,4 @@
+//my-log
 #include <stdio.h>
 #include <stdlib.h>   //* exit(0)
 #include <string.h>
